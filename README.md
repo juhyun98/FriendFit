@@ -51,11 +51,11 @@ friendFit은 위치기반 운동정보 종합 플래폼으로 신뢰할 수 있�
 
 ## 담당한 기능
 
-- 로그인 및 회원가입 기능 구현
-- 커뮤니티 페이지 디자인 및 좋아요 및 조회수 기능 구현
-- 커뮤니티 글 작성 및 수정, 댓글 기능 구현
+- 웹 페이지 디자인 및 서브 기능 구현
+- 멤버, 커뮤니티 CRUD기능 (회원기능, 게시판기능)
+- KaKaoMap API 연동
 - ajax로 비동기식 페이지 구현
-- OracleDB 쿼리문 작성 및 연동
+- DB 설계 및 연동
 
 <br><br>
 
@@ -64,15 +64,15 @@ friendFit은 위치기반 운동정보 종합 플래폼으로 신뢰할 수 있�
 - 좋아요 버튼을 눌렀을 때 페이지를 새로고침을 해야 좋아요 개수 증가가 반영이 됨.
 - 로그인과 회원가입, 게시글(CRUD) 기능과 DB연결 코드를 나누어 만들지 않아 가독성과 에러발생 시 수정에 어려움을 겪음.
 - CRUD 기능을 구현하면서 Rest 원칙을 잘 따르지 못해 URI에 자원에 대한 행위들이 들어갔다.
-community/write/1,  main/delete/1
+community/write/1,  main/delete/1, GET/members/delete/1 
 
 ## 해결
 
 - ajax를 이용하여 페이지 새로고침 없이 좋아요 개수가 증가하도록 비동식 구현
 - Controller를 만들어 객체지향적으로 로그인 회원가입 CRUD를 모두 나누어 코드를 짜고 DB연동 코드를 캡슐화 하여 DAO DTO로 나누어 유지보수성을 늘리고 가독성도 상승시킴
-- Get, Post, Put, Delete, Patch, Options 등으로 자원의 행위를 표현하는 것이 
+- 자원의 행위는 HTTP Method로 Get, Post, Put, Delete, Patch 등으로 표현하는 것이 
 Rest 원칙을 잘 따른 RestFull API라는 것을 알게 됨
-ex) 회원정보 가져오기 get/users,  회원가입하기 post/users 등
+ex) 회원정보 가져오기 get/users,  회원가입하기 post/users DELETE/members/1 등
 
 <br><br>
 
