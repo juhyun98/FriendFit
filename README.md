@@ -90,15 +90,13 @@ ex) 회원정보 가져오기 get/users,  회원가입하기 post/users DELETE/m
 도움이 되었습니다. 아쉬웠던 점은 시간이 더 주어졌더라면 여러가지 기능을 더 만들어 보고 싶고 더 완벽하게 구현하고 
 싶다는 생각이 들었습니다.
 
-<br><br>
-## 깨달은 점
+## 깨달은점
 - 객체지향적 프로그래밍의 장점
 - 팀원과의 커뮤니케이션을 통한 협업의 중요성
 - ajax로 비동기식 페이지 구현하는 법
 - MVC패턴 JSP와 Servlet을 사용한 개발 방식 이해
 - RESTfull API 설계방법과 중요성
 - 여러가지 api를 사용하는 법 (KaKaoMap geolocation, Naver clovar OCR)
-- DB ER다이어그램 설계와 쿼리문 작성법
 
 <br><br>
 
